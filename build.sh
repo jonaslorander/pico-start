@@ -28,7 +28,7 @@ fi
 if [ -d "$PICO_SDK_PATH" ]; then
     # Copy pico_sdk_import.cmake if it doesn't exist
     if [ ! -f "./$PICO_SDK_IMPORT" ]; then
-        cp "$PICO_EXAMPLES_PATH$PICO_SDK_IMPORT" .
+        cp "$PICO_SDK_PATH/external/$PICO_SDK_IMPORT" .
     fi
 else
     echo "Aborting. Could not find directory $PICO_SDK_PATH"
